@@ -14,26 +14,29 @@ function seDesligado() {
 // Vermelho
 function corVermelha() {
     semaforo.src = 'img/vermelho.png'
+    clearInterval(idInterval)
 }
 // Amarelo
 function corAmarela() {
     semaforo.src = 'img/amarelo.png'
+    clearInterval(idInterval)
 }
 // Verde
 function corVerde() {
     semaforo.src = 'img/verde.png'
+    clearInterval(idInterval)
 }
 
 // Trocar Cores Automatico
 function trocarCores() {
     if (semaforo.src.includes('vermelho')) { 
-        corVerde() 
+        semaforo.src = 'img/verde.png'
     } else if (semaforo.src.includes('amarelo')) {
-        corVermelha() 
+        semaforo.src = 'img/vermelho.png'
     } else if (semaforo.src.includes('verde')) {
-        corAmarela()
+        semaforo.src = 'img/amarelo.png'
     } else { 
-        corVermelha() 
+        semaforo.src = 'img/vermelho.png'
     }
 }
 
