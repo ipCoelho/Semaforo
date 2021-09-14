@@ -15,16 +15,19 @@ function seDesligado() {
 function corVermelha() {
     semaforo.src = 'img/vermelho.png'
     clearInterval(idInterval)
+    btnAuto.textContent = 'Automático'
 }
 // Amarelo
 function corAmarela() {
     semaforo.src = 'img/amarelo.png'
     clearInterval(idInterval)
+    btnAuto.textContent = 'Automático'
 }
 // Verde
 function corVerde() {
     semaforo.src = 'img/verde.png'
     clearInterval(idInterval)
+    btnAuto.textContent = 'Automático'
 }
 
 // Trocar Cores Automatico
