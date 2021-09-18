@@ -45,7 +45,7 @@ function trocarCores() {
 
 function corAutomatica() {
     if (btnAuto.textContent == 'Automático') {
-        idInterval = setInterval(trocarCores, 2000)
+        idInterval = setInterval(trocarCores, 1000)
         btnAuto.textContent = 'Parar'
     } else {
         clearInterval(idInterval)
